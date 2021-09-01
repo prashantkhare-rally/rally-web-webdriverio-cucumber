@@ -1,3 +1,35 @@
 {
-    "someElement": "#gbwa"
+    "someElement": "#gbwa",
+    "SF_username": "#username",
+    "SF_password": "#password",
+    "SF_btnLogin": "#Login",
+    "SF_btnMenu": "//*[@id='oneHeader']/div[2]/span/div[2]/ul/li[9]/span/button",
+    "SF_linkClassicView": "//a[normalize-space()='Switch to Salesforce Classic']",
+    "SF_lblNews": "//span[@class='slds-text-heading_small']",
+    "SF_SearchClient": "#phSearchInput",
+    "SF_btnSearch": "#phSearchButton",
+    "SF_linkClientImp": "//a[text(]",
+    "SF_lblContactText": "#00NE0000006Km3F_ileinner",
+    "SF_StandardContact": "//div[@id='00NE0000006Km3F_ileinner']",
+    "SF_CustomContact": "//div[@id='00NE0000006Km2z_ileinner']",
+    "SF_CheckboxResourcePage": "//img[@id='00N2R000007NnYt_chkbox']",
+    "SF_linkResourcePage": "//a[contains(text(),'Resource Page -')]",
+    "SF_ResourceHeadline": "//div[@id='00NE0000006Km7g_ileinner']",
+    "SF_ResourceBody": "//div[@id='00NE0000006Km7h_ileinner']",
+    "Rally_LoginEmail": "#email",
+    "Rally_LoginPassword": "#password",
+    "Rally_LoginButton": "#submit-button",
+    "Rally_HomeButton": "//img[@id='rh-header-company-info-image']",
+    "Rally_Menu"   :   "#rh-header-account-menu-profile-container",
+    "Rally_HelpLink": "//a[@id='rh-header-account-menu-dropdown-content-link0']",
+    "Rally_LogoutLink": "//a[@id='rh-header-account-menu-dropdown-content-link1']",
+    "Rally_ContactSupportButton": "//button[normalize-space()='Contact Support']",
+    "Rally_ContactNumberButton": ".slds-button.slds-button_brand.cta-button",
+    "Rally_lblProfileName": "//div[@id='rh-header-account-menu-profile-name']",
+    "Rally_lblQuickLinks": "//h2[normalize-space()='Quick Links']"
+
+
+
+
+
 }

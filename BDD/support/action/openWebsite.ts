@@ -3,11 +3,25 @@
  * @param  {String}   type Type of navigation (getUrl or site)
  * @param  {String}   page The URL to navigate to
  */
-export default (type: 'url' | 'site', page: string) => {
+import * as generic from '../../testdata/generic.json';
+
+export default async (type: 'url' | 'site', page: string) => {
     /**
      * The URL to navigate to
      * @type {String}
      */
-    const url = (type === 'url') ? page : browser.options.baseUrl + page;
-    browser.url(url);
+
+    let customUrl;
+
+    if(page != "/")
+    {
+        customUrl = (<any>generic)[page];
+        console.log("The launch url is: " + customUrl)
+    } 
+
+
+    const url = (type === 'url') ? customUrl : browser.options.baseUrl + page;
+    console.log("The launch url is: " + url);
+    await Promise.all([browser.url(url)]);
+    // browser.url(url);
 };

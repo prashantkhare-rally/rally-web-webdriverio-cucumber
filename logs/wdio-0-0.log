@@ -1,27 +1,353 @@
-2021-08-11T12:09:38.097Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
-2021-08-11T12:09:38.598Z INFO @wdio/local-runner: Run worker command: run
-2021-08-11T12:09:38.836Z DEBUG @wdio/config:utils: Found 'ts-node' package, auto-compiling TypeScript files
-2021-08-11T12:09:38.964Z DEBUG @wdio/local-runner:utils: init remote session
-2021-08-11T12:09:39.485Z DEBUG @wdio/local-runner:utils: init remote session
-2021-08-11T12:09:39.496Z INFO devtools:puppeteer: Initiate new session using the DevTools protocol
-2021-08-11T12:09:39.497Z INFO devtools: Launch Google Chrome with flags: --enable-automation --disable-popup-blocking --disable-extensions --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-sync --metrics-recording-only --disable-default-apps --mute-audio --no-first-run --no-default-browser-check --disable-hang-monitor --disable-prompt-on-repost --disable-client-side-phishing-detection --password-store=basic --use-mock-keychain --disable-component-extensions-with-background-pages --disable-breakpad --disable-dev-shm-usage --disable-ipc-flooding-protection --disable-renderer-backgrounding --force-fieldtrials=*BackgroundTracing/default/ --enable-features=NetworkService,NetworkServiceInProcess --disable-features=site-per-process,TranslateUI,BlinkGenPropertyTrees --window-position=0,0 --window-size=1200,900
-2021-08-11T12:09:40.551Z INFO devtools: Connect Puppeteer with browser on port 54414
-2021-08-11T12:09:41.847Z INFO devtools: COMMAND navigateTo("https://www.google.com/")
-2021-08-11T12:09:54.675Z INFO devtools: RESULT null
-2021-08-11T12:09:54.711Z INFO devtools: COMMAND findElements("css selector", "#gbwa")
-2021-08-11T12:09:54.715Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-1' } ]
-2021-08-11T12:09:54.727Z INFO devtools: COMMAND findElement("css selector", "#gbwa")
-2021-08-11T12:09:54.729Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-2' }
-2021-08-11T12:09:54.732Z INFO devtools: COMMAND elementClick("ELEMENT-2")
-2021-08-11T12:09:54.778Z INFO devtools: RESULT null
-2021-08-11T12:09:59.788Z INFO devtools: COMMAND findElements("css selector", "#gbwa")
-2021-08-11T12:09:59.791Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-3' } ]
-2021-08-11T12:09:59.795Z INFO devtools: COMMAND findElement("css selector", "#gbwa")
-2021-08-11T12:09:59.796Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-4' }
-2021-08-11T12:09:59.801Z INFO devtools: COMMAND elementClick("ELEMENT-4")
-2021-08-11T12:09:59.837Z INFO devtools: RESULT null
-2021-08-11T12:09:59.841Z INFO devtools: COMMAND takeScreenshot()
-2021-08-11T12:10:00.172Z INFO devtools: RESULT iVBORw0KGgoAAAANSUhEUgAACWAAAAYSCAYAAAC879BNAAABLGlDQ1BTa2lhA...
-2021-08-11T12:10:00.173Z DEBUG @wdio/sync: Finished to run "afterScenario" hook in 334ms
-2021-08-11T12:10:00.176Z INFO devtools: COMMAND deleteSession()
-2021-08-11T12:10:00.178Z INFO devtools: RESULT null
+2021-09-01T10:09:03.029Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
+2021-09-01T10:09:03.386Z INFO @wdio/local-runner: Run worker command: run
+2021-09-01T10:09:03.564Z DEBUG @wdio/config:utils: Found 'ts-node' package, auto-compiling TypeScript files
+2021-09-01T10:09:03.671Z DEBUG @wdio/local-runner:utils: init remote session
+2021-09-01T10:09:04.092Z DEBUG @wdio/local-runner:utils: init remote session
+2021-09-01T10:09:04.100Z INFO devtools:puppeteer: Initiate new session using the DevTools protocol
+2021-09-01T10:09:04.101Z INFO devtools: Launch Google Chrome with flags: --enable-automation --disable-popup-blocking --disable-extensions --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-sync --metrics-recording-only --disable-default-apps --mute-audio --no-first-run --no-default-browser-check --disable-hang-monitor --disable-prompt-on-repost --disable-client-side-phishing-detection --password-store=basic --use-mock-keychain --disable-component-extensions-with-background-pages --disable-breakpad --disable-dev-shm-usage --disable-ipc-flooding-protection --disable-renderer-backgrounding --force-fieldtrials=*BackgroundTracing/default/ --enable-features=NetworkService,NetworkServiceInProcess --disable-features=site-per-process,TranslateUI,BlinkGenPropertyTrees --window-position=0,0 --window-size=1200,900
+2021-09-01T10:09:05.154Z INFO devtools: Connect Puppeteer with browser on port 58495
+2021-09-01T10:09:06.610Z INFO devtools: COMMAND navigateTo("https://rallyhealth.my.salesforce.com/home/home.jsp?source=lex")
+2021-09-01T10:09:13.385Z INFO devtools: RESULT null
+2021-09-01T10:09:13.390Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:13.390Z INFO devtools: RESULT null
+2021-09-01T10:09:13.392Z INFO devtools: COMMAND findElements("css selector", "#username")
+2021-09-01T10:09:13.400Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-1' } ]
+2021-09-01T10:09:13.411Z INFO devtools: COMMAND findElement("css selector", "#username")
+2021-09-01T10:09:13.415Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-2' }
+2021-09-01T10:09:13.418Z INFO devtools: COMMAND elementClear("ELEMENT-2")
+2021-09-01T10:09:13.421Z INFO devtools: RESULT null
+2021-09-01T10:09:13.425Z INFO devtools: COMMAND elementSendKeys("ELEMENT-2", "prashant.khare@rallyhealth.com")
+2021-09-01T10:09:13.473Z INFO devtools: RESULT null
+2021-09-01T10:09:13.474Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:13.474Z INFO devtools: RESULT null
+2021-09-01T10:09:13.475Z INFO devtools: COMMAND findElements("css selector", "#password")
+2021-09-01T10:09:13.479Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-3' } ]
+2021-09-01T10:09:13.482Z INFO devtools: COMMAND findElement("css selector", "#password")
+2021-09-01T10:09:13.485Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-4' }
+2021-09-01T10:09:13.487Z INFO devtools: COMMAND elementClear("ELEMENT-4")
+2021-09-01T10:09:13.489Z INFO devtools: RESULT null
+2021-09-01T10:09:13.491Z INFO devtools: COMMAND elementSendKeys("ELEMENT-4", "April@9560265595")
+2021-09-01T10:09:13.518Z INFO devtools: RESULT null
+2021-09-01T10:09:13.520Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:13.520Z INFO devtools: RESULT null
+2021-09-01T10:09:13.521Z INFO devtools: COMMAND findElements("css selector", "#Login")
+2021-09-01T10:09:13.525Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-5' } ]
+2021-09-01T10:09:13.528Z INFO devtools: COMMAND findElement("css selector", "#Login")
+2021-09-01T10:09:13.530Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-6' }
+2021-09-01T10:09:13.533Z INFO devtools: COMMAND elementClick("ELEMENT-6")
+2021-09-01T10:09:13.559Z INFO devtools: RESULT null
+2021-09-01T10:09:30.417Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:30.417Z INFO devtools: RESULT null
+2021-09-01T10:09:30.419Z INFO devtools: COMMAND findElements("css selector", "#phSearchInput")
+2021-09-01T10:09:30.425Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-7' } ]
+2021-09-01T10:09:30.429Z INFO devtools: COMMAND findElement("css selector", "#phSearchInput")
+2021-09-01T10:09:30.432Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-8' }
+2021-09-01T10:09:30.435Z INFO devtools: COMMAND elementClear("ELEMENT-8")
+2021-09-01T10:09:30.437Z INFO devtools: RESULT null
+2021-09-01T10:09:30.438Z INFO devtools: COMMAND elementSendKeys("ELEMENT-8", "CBIZ - 09/01/2021")
+2021-09-01T10:09:30.488Z INFO devtools: RESULT null
+2021-09-01T10:09:30.490Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:30.490Z INFO devtools: RESULT null
+2021-09-01T10:09:30.491Z INFO devtools: COMMAND findElements("css selector", "#phSearchButton")
+2021-09-01T10:09:30.495Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-9' } ]
+2021-09-01T10:09:30.499Z INFO devtools: COMMAND findElement("css selector", "#phSearchButton")
+2021-09-01T10:09:30.502Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-10' }
+2021-09-01T10:09:30.505Z INFO devtools: COMMAND elementClick("ELEMENT-10")
+2021-09-01T10:09:30.529Z INFO devtools: RESULT null
+2021-09-01T10:09:32.613Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:32.614Z INFO devtools: RESULT null
+2021-09-01T10:09:32.616Z INFO devtools: COMMAND findElements("xpath", "//a[normalize-space()="CBIZ - 09/01/2021"]")
+2021-09-01T10:09:32.623Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-11' } ]
+2021-09-01T10:09:32.627Z INFO devtools: COMMAND findElement("xpath", "//a[normalize-space()="CBIZ - 09/01/2021"]")
+2021-09-01T10:09:32.632Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-12' }
+2021-09-01T10:09:32.634Z INFO devtools: COMMAND elementClick("ELEMENT-12")
+2021-09-01T10:09:32.667Z INFO devtools: RESULT null
+2021-09-01T10:09:36.392Z INFO devtools: COMMAND findElement("xpath", "//div[@id='00NE0000006Km3F_ileinner']")
+2021-09-01T10:09:36.398Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-13' }
+2021-09-01T10:09:36.401Z INFO devtools: COMMAND getElementText("ELEMENT-13")
+2021-09-01T10:09:36.403Z INFO devtools: RESULT Optum Support Standard (1-877-818-5826)
+2021-09-01T10:09:36.405Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:36.405Z INFO devtools: RESULT null
+2021-09-01T10:09:36.406Z INFO devtools: COMMAND findElements("css selector", "#phSearchInput")
+2021-09-01T10:09:36.410Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-14' } ]
+2021-09-01T10:09:36.412Z INFO devtools: COMMAND findElement("css selector", "#phSearchInput")
+2021-09-01T10:09:36.416Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-15' }
+2021-09-01T10:09:36.419Z INFO devtools: COMMAND elementClear("ELEMENT-15")
+2021-09-01T10:09:36.421Z INFO devtools: RESULT null
+2021-09-01T10:09:36.423Z INFO devtools: COMMAND elementSendKeys("ELEMENT-15", "Danfoss - 09/01/2021")
+2021-09-01T10:09:36.491Z INFO devtools: RESULT null
+2021-09-01T10:09:36.492Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:36.492Z INFO devtools: RESULT null
+2021-09-01T10:09:36.493Z INFO devtools: COMMAND findElements("css selector", "#phSearchButton")
+2021-09-01T10:09:36.500Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-16' } ]
+2021-09-01T10:09:36.504Z INFO devtools: COMMAND findElement("css selector", "#phSearchButton")
+2021-09-01T10:09:36.507Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-17' }
+2021-09-01T10:09:36.511Z INFO devtools: COMMAND elementClick("ELEMENT-17")
+2021-09-01T10:09:36.539Z INFO devtools: RESULT null
+2021-09-01T10:09:37.439Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:37.439Z INFO devtools: RESULT null
+2021-09-01T10:09:37.445Z INFO devtools: COMMAND findElements("xpath", "//a[normalize-space()="Danfoss - 09/01/2021"]")
+2021-09-01T10:09:37.463Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-18' } ]
+2021-09-01T10:09:37.466Z INFO devtools: COMMAND findElement("xpath", "//a[normalize-space()="Danfoss - 09/01/2021"]")
+2021-09-01T10:09:37.470Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-19' }
+2021-09-01T10:09:37.472Z INFO devtools: COMMAND elementClick("ELEMENT-19")
+2021-09-01T10:09:37.487Z INFO devtools: RESULT null
+2021-09-01T10:09:40.592Z INFO devtools: COMMAND findElement("xpath", "//div[@id='00NE0000006Km3F_ileinner']")
+2021-09-01T10:09:40.599Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-20' }
+2021-09-01T10:09:40.602Z INFO devtools: COMMAND getElementText("ELEMENT-20")
+2021-09-01T10:09:40.604Z INFO devtools: RESULT Optum Support Standard (1-877-818-5826)
+2021-09-01T10:09:40.606Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:40.606Z INFO devtools: RESULT null
+2021-09-01T10:09:40.607Z INFO devtools: COMMAND findElements("css selector", "#phSearchInput")
+2021-09-01T10:09:40.611Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-21' } ]
+2021-09-01T10:09:40.614Z INFO devtools: COMMAND findElement("css selector", "#phSearchInput")
+2021-09-01T10:09:40.617Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-22' }
+2021-09-01T10:09:40.619Z INFO devtools: COMMAND elementClear("ELEMENT-22")
+2021-09-01T10:09:40.621Z INFO devtools: RESULT null
+2021-09-01T10:09:40.623Z INFO devtools: COMMAND elementSendKeys("ELEMENT-22", "Loomis - 09/01/2021")
+2021-09-01T10:09:40.690Z INFO devtools: RESULT null
+2021-09-01T10:09:40.691Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:40.692Z INFO devtools: RESULT null
+2021-09-01T10:09:40.692Z INFO devtools: COMMAND findElements("css selector", "#phSearchButton")
+2021-09-01T10:09:40.696Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-23' } ]
+2021-09-01T10:09:40.700Z INFO devtools: COMMAND findElement("css selector", "#phSearchButton")
+2021-09-01T10:09:40.703Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-24' }
+2021-09-01T10:09:40.705Z INFO devtools: COMMAND elementClick("ELEMENT-24")
+2021-09-01T10:09:40.739Z INFO devtools: RESULT null
+2021-09-01T10:09:41.628Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:41.628Z INFO devtools: RESULT null
+2021-09-01T10:09:41.629Z INFO devtools: COMMAND findElements("xpath", "//a[normalize-space()="Loomis - 09/01/2021"]")
+2021-09-01T10:09:41.635Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-25' } ]
+2021-09-01T10:09:41.638Z INFO devtools: COMMAND findElement("xpath", "//a[normalize-space()="Loomis - 09/01/2021"]")
+2021-09-01T10:09:41.642Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-26' }
+2021-09-01T10:09:41.644Z INFO devtools: COMMAND elementClick("ELEMENT-26")
+2021-09-01T10:09:41.686Z INFO devtools: RESULT null
+2021-09-01T10:09:44.463Z INFO devtools: COMMAND findElement("xpath", "//div[@id='00NE0000006Km3F_ileinner']")
+2021-09-01T10:09:44.469Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-27' }
+2021-09-01T10:09:44.471Z INFO devtools: COMMAND getElementText("ELEMENT-27")
+2021-09-01T10:09:44.473Z INFO devtools: RESULT Optum Support Standard (1-877-818-5826)
+2021-09-01T10:09:44.475Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:44.475Z INFO devtools: RESULT null
+2021-09-01T10:09:44.476Z INFO devtools: COMMAND findElements("css selector", "#phSearchInput")
+2021-09-01T10:09:44.481Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-28' } ]
+2021-09-01T10:09:44.486Z INFO devtools: COMMAND findElement("css selector", "#phSearchInput")
+2021-09-01T10:09:44.490Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-29' }
+2021-09-01T10:09:44.494Z INFO devtools: COMMAND elementClear("ELEMENT-29")
+2021-09-01T10:09:44.498Z INFO devtools: RESULT null
+2021-09-01T10:09:44.519Z INFO devtools: COMMAND elementSendKeys("ELEMENT-29", "NEC Corporation of America - 09/01/2021")
+2021-09-01T10:09:44.641Z INFO devtools: RESULT null
+2021-09-01T10:09:44.642Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:44.642Z INFO devtools: RESULT null
+2021-09-01T10:09:44.644Z INFO devtools: COMMAND findElements("css selector", "#phSearchButton")
+2021-09-01T10:09:44.650Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-30' } ]
+2021-09-01T10:09:44.653Z INFO devtools: COMMAND findElement("css selector", "#phSearchButton")
+2021-09-01T10:09:44.656Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-31' }
+2021-09-01T10:09:44.659Z INFO devtools: COMMAND elementClick("ELEMENT-31")
+2021-09-01T10:09:44.689Z INFO devtools: RESULT null
+2021-09-01T10:09:45.401Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:45.401Z INFO devtools: RESULT null
+2021-09-01T10:09:45.407Z INFO devtools: COMMAND findElements("xpath", "//a[normalize-space()="NEC Corporation of America - 09/01/2021"]")
+2021-09-01T10:09:45.422Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-32' } ]
+2021-09-01T10:09:45.424Z INFO devtools: COMMAND findElement("xpath", "//a[normalize-space()="NEC Corporation of America - 09/01/2021"]")
+2021-09-01T10:09:45.428Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-33' }
+2021-09-01T10:09:45.431Z INFO devtools: COMMAND elementClick("ELEMENT-33")
+2021-09-01T10:09:45.456Z INFO devtools: RESULT null
+2021-09-01T10:09:47.814Z INFO devtools: COMMAND findElement("xpath", "//div[@id='00NE0000006Km3F_ileinner']")
+2021-09-01T10:09:47.821Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-34' }
+2021-09-01T10:09:47.824Z INFO devtools: COMMAND getElementText("ELEMENT-34")
+2021-09-01T10:09:47.826Z INFO devtools: RESULT Optum Support Standard (1-877-818-5826)
+2021-09-01T10:09:47.827Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:47.828Z INFO devtools: RESULT null
+2021-09-01T10:09:47.829Z INFO devtools: COMMAND findElements("css selector", "#phSearchInput")
+2021-09-01T10:09:47.833Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-35' } ]
+2021-09-01T10:09:47.836Z INFO devtools: COMMAND findElement("css selector", "#phSearchInput")
+2021-09-01T10:09:47.839Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-36' }
+2021-09-01T10:09:47.841Z INFO devtools: COMMAND elementClear("ELEMENT-36")
+2021-09-01T10:09:47.843Z INFO devtools: RESULT null
+2021-09-01T10:09:47.845Z INFO devtools: COMMAND elementSendKeys("ELEMENT-36", "Newport News Public Schools - 09/01/2021")
+2021-09-01T10:09:47.964Z INFO devtools: RESULT null
+2021-09-01T10:09:47.968Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:47.968Z INFO devtools: RESULT null
+2021-09-01T10:09:47.969Z INFO devtools: COMMAND findElements("css selector", "#phSearchButton")
+2021-09-01T10:09:47.973Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-37' } ]
+2021-09-01T10:09:47.975Z INFO devtools: COMMAND findElement("css selector", "#phSearchButton")
+2021-09-01T10:09:47.978Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-38' }
+2021-09-01T10:09:47.980Z INFO devtools: COMMAND elementClick("ELEMENT-38")
+2021-09-01T10:09:48.006Z INFO devtools: RESULT null
+2021-09-01T10:09:48.980Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:48.980Z INFO devtools: RESULT null
+2021-09-01T10:09:48.982Z INFO devtools: COMMAND findElements("xpath", "//a[normalize-space()="Newport News Public Schools - 09/01/2021"]")
+2021-09-01T10:09:48.986Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-39' } ]
+2021-09-01T10:09:48.989Z INFO devtools: COMMAND findElement("xpath", "//a[normalize-space()="Newport News Public Schools - 09/01/2021"]")
+2021-09-01T10:09:48.992Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-40' }
+2021-09-01T10:09:48.995Z INFO devtools: COMMAND elementClick("ELEMENT-40")
+2021-09-01T10:09:49.022Z INFO devtools: RESULT null
+2021-09-01T10:09:51.884Z INFO devtools: COMMAND findElement("xpath", "//div[@id='00NE0000006Km3F_ileinner']")
+2021-09-01T10:09:51.890Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-41' }
+2021-09-01T10:09:51.892Z INFO devtools: COMMAND getElementText("ELEMENT-41")
+2021-09-01T10:09:51.894Z INFO devtools: RESULT Optum Support Standard (1-877-818-5826)
+2021-09-01T10:09:51.895Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:51.895Z INFO devtools: RESULT null
+2021-09-01T10:09:51.896Z INFO devtools: COMMAND findElements("css selector", "#phSearchInput")
+2021-09-01T10:09:51.900Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-42' } ]
+2021-09-01T10:09:51.902Z INFO devtools: COMMAND findElement("css selector", "#phSearchInput")
+2021-09-01T10:09:51.905Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-43' }
+2021-09-01T10:09:51.908Z INFO devtools: COMMAND elementClear("ELEMENT-43")
+2021-09-01T10:09:51.909Z INFO devtools: RESULT null
+2021-09-01T10:09:51.910Z INFO devtools: COMMAND elementSendKeys("ELEMENT-43", "Skillsoft - 09/01/2021")
+2021-09-01T10:09:51.985Z INFO devtools: RESULT null
+2021-09-01T10:09:51.986Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:51.986Z INFO devtools: RESULT null
+2021-09-01T10:09:51.987Z INFO devtools: COMMAND findElements("css selector", "#phSearchButton")
+2021-09-01T10:09:51.992Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-44' } ]
+2021-09-01T10:09:51.994Z INFO devtools: COMMAND findElement("css selector", "#phSearchButton")
+2021-09-01T10:09:52.001Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-45' }
+2021-09-01T10:09:52.003Z INFO devtools: COMMAND elementClick("ELEMENT-45")
+2021-09-01T10:09:52.039Z INFO devtools: RESULT null
+2021-09-01T10:09:52.939Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:09:52.939Z INFO devtools: RESULT null
+2021-09-01T10:09:52.940Z INFO devtools: COMMAND findElements("xpath", "//a[normalize-space()="Skillsoft - 09/01/2021"]")
+2021-09-01T10:09:52.946Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-46' } ]
+2021-09-01T10:09:52.949Z INFO devtools: COMMAND findElement("xpath", "//a[normalize-space()="Skillsoft - 09/01/2021"]")
+2021-09-01T10:09:52.953Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-47' }
+2021-09-01T10:09:52.955Z INFO devtools: COMMAND elementClick("ELEMENT-47")
+2021-09-01T10:09:52.972Z INFO devtools: RESULT null
+2021-09-01T10:09:54.990Z INFO devtools: COMMAND findElement("xpath", "//div[@id='00NE0000006Km3F_ileinner']")
+2021-09-01T10:09:54.996Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-48' }
+2021-09-01T10:09:54.998Z INFO devtools: COMMAND getElementText("ELEMENT-48")
+2021-09-01T10:09:55.000Z INFO devtools: RESULT Optum Support Standard (1-877-818-5826)
+2021-09-01T10:09:55.011Z INFO devtools: COMMAND navigateTo("https://accounts.werally.com/login/")
+2021-09-01T10:10:11.409Z INFO devtools: RESULT null
+2021-09-01T10:10:11.415Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:11.415Z INFO devtools: RESULT null
+2021-09-01T10:10:11.417Z INFO devtools: COMMAND findElements("css selector", "#email")
+2021-09-01T10:10:11.423Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-49' } ]
+2021-09-01T10:10:11.426Z INFO devtools: COMMAND findElement("css selector", "#email")
+2021-09-01T10:10:11.428Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-50' }
+2021-09-01T10:10:11.431Z INFO devtools: COMMAND elementClear("ELEMENT-50")
+2021-09-01T10:10:11.433Z INFO devtools: RESULT null
+2021-09-01T10:10:11.433Z INFO devtools: COMMAND elementSendKeys("ELEMENT-50", "uat_PEzMtGfo@rally.mailinator.com")
+2021-09-01T10:10:11.994Z INFO devtools: RESULT null
+2021-09-01T10:10:11.995Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:11.995Z INFO devtools: RESULT null
+2021-09-01T10:10:11.996Z INFO devtools: COMMAND findElements("css selector", "#password")
+2021-09-01T10:10:11.999Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-51' } ]
+2021-09-01T10:10:12.002Z INFO devtools: COMMAND findElement("css selector", "#password")
+2021-09-01T10:10:12.004Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-52' }
+2021-09-01T10:10:12.007Z INFO devtools: COMMAND elementClear("ELEMENT-52")
+2021-09-01T10:10:12.008Z INFO devtools: RESULT null
+2021-09-01T10:10:12.009Z INFO devtools: COMMAND elementSendKeys("ELEMENT-52", "Testing123!")
+2021-09-01T10:10:12.044Z INFO devtools: RESULT null
+2021-09-01T10:10:12.045Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:12.045Z INFO devtools: RESULT null
+2021-09-01T10:10:12.046Z INFO devtools: COMMAND findElements("css selector", "#submit-button")
+2021-09-01T10:10:12.050Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-53' } ]
+2021-09-01T10:10:12.053Z INFO devtools: COMMAND findElement("css selector", "#submit-button")
+2021-09-01T10:10:12.055Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-54' }
+2021-09-01T10:10:12.058Z INFO devtools: COMMAND elementClick("ELEMENT-54")
+2021-09-01T10:10:12.187Z INFO devtools: RESULT null
+2021-09-01T10:10:23.642Z INFO devtools: COMMAND findElement("css selector", "#rh-header-account-menu-profile-container")
+2021-09-01T10:10:27.079Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-55' }
+2021-09-01T10:10:27.082Z INFO devtools: COMMAND getElementRect("ELEMENT-55")
+2021-09-01T10:10:27.084Z INFO devtools: RESULT { x: 865, y: 0, width: 240, height: 60 }
+2021-09-01T10:10:27.085Z INFO devtools: COMMAND executeScript(<fn>, <object>)
+2021-09-01T10:10:27.087Z INFO devtools: RESULT { scrollX: 0, scrollY: 0 }
+2021-09-01T10:10:27.089Z INFO devtools: COMMAND performActions(<object>)
+2021-09-01T10:10:27.230Z INFO devtools: COMMAND releaseActions()
+2021-09-01T10:10:27.232Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:27.232Z INFO devtools: RESULT null
+2021-09-01T10:10:27.233Z INFO devtools: COMMAND findElements("xpath", "//a[@id='rh-header-account-menu-dropdown-content-link0']")
+2021-09-01T10:10:27.237Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-56' } ]
+2021-09-01T10:10:27.240Z INFO devtools: COMMAND findElement("xpath", "//a[@id='rh-header-account-menu-dropdown-content-link0']")
+2021-09-01T10:10:27.244Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-57' }
+2021-09-01T10:10:27.246Z INFO devtools: COMMAND elementClick("ELEMENT-57")
+2021-09-01T10:10:27.296Z INFO devtools: RESULT null
+2021-09-01T10:10:35.048Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:35.048Z INFO devtools: RESULT null
+2021-09-01T10:10:35.053Z INFO devtools: COMMAND getWindowHandles()
+2021-09-01T10:10:35.053Z INFO devtools: RESULT [
+  'c7bc4060-18d5-40f7-b46a-c2f66be1fa14',
+  'f8979a4f-302c-4ed4-bd02-d717c1a10dca'
+]
+2021-09-01T10:10:35.062Z INFO devtools: COMMAND switchToWindow("f8979a4f-302c-4ed4-bd02-d717c1a10dca")
+2021-09-01T10:10:35.062Z INFO devtools: RESULT f8979a4f-302c-4ed4-bd02-d717c1a10dca
+2021-09-01T10:10:35.064Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:35.064Z INFO devtools: RESULT null
+2021-09-01T10:10:35.065Z INFO devtools: COMMAND findElements("xpath", "//button[normalize-space()='Contact Support']")
+2021-09-01T10:10:37.433Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-58' } ]
+2021-09-01T10:10:37.436Z INFO devtools: COMMAND findElement("xpath", "//button[normalize-space()='Contact Support']")
+2021-09-01T10:10:37.443Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-59' }
+2021-09-01T10:10:37.446Z INFO devtools: COMMAND elementClick("ELEMENT-59")
+2021-09-01T10:10:37.498Z INFO devtools: RESULT null
+2021-09-01T10:10:37.500Z INFO devtools: COMMAND findElement("css selector", ".slds-button.slds-button_brand.cta-button")
+2021-09-01T10:10:39.261Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-60' }
+2021-09-01T10:10:39.265Z INFO devtools: COMMAND getElementText("ELEMENT-60")
+2021-09-01T10:10:39.268Z INFO devtools: RESULT 877-818-5826
+2021-09-01T10:10:39.270Z INFO devtools: COMMAND findElement("css selector", ".slds-button.slds-button_brand.cta-button")
+2021-09-01T10:10:39.274Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-61' }
+2021-09-01T10:10:39.276Z INFO devtools: COMMAND getElementText("ELEMENT-61")
+2021-09-01T10:10:39.279Z INFO devtools: RESULT 877-818-5826
+2021-09-01T10:10:39.280Z INFO devtools: COMMAND takeScreenshot()
+2021-09-01T10:10:39.590Z INFO devtools: RESULT iVBORw0KGgoAAAANSUhEUgAACWAAAAiSCAYAAADyYL/IAAABLGlDQ1BTa2lhA...
+2021-09-01T10:10:39.594Z INFO devtools: COMMAND takeScreenshot()
+2021-09-01T10:10:39.907Z INFO devtools: RESULT iVBORw0KGgoAAAANSUhEUgAACWAAAAiSCAYAAADyYL/IAAABLGlDQ1BTa2lhA...
+2021-09-01T10:10:39.913Z INFO devtools: COMMAND closeWindow()
+2021-09-01T10:10:39.942Z TRACE devtools: Target destroyed, removing window handle f8979a4f-302c-4ed4-bd02-d717c1a10dca
+2021-09-01T10:10:39.943Z TRACE devtools: Switching to window handle with id c7bc4060-18d5-40f7-b46a-c2f66be1fa14
+2021-09-01T10:10:40.047Z INFO devtools: RESULT c7bc4060-18d5-40f7-b46a-c2f66be1fa14
+2021-09-01T10:10:40.052Z INFO devtools: COMMAND switchToWindow("c7bc4060-18d5-40f7-b46a-c2f66be1fa14")
+2021-09-01T10:10:40.052Z INFO devtools: RESULT c7bc4060-18d5-40f7-b46a-c2f66be1fa14
+2021-09-01T10:10:40.053Z INFO devtools: COMMAND findElement("css selector", "#rh-header-account-menu-profile-container")
+2021-09-01T10:10:40.055Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-62' }
+2021-09-01T10:10:40.058Z INFO devtools: COMMAND getElementRect("ELEMENT-62")
+2021-09-01T10:10:40.060Z INFO devtools: RESULT { x: 865, y: 0, width: 240, height: 60 }
+2021-09-01T10:10:40.061Z INFO devtools: COMMAND executeScript(<fn>, <object>)
+2021-09-01T10:10:40.063Z INFO devtools: RESULT { scrollX: 0, scrollY: 0 }
+2021-09-01T10:10:40.064Z INFO devtools: COMMAND performActions(<object>)
+2021-09-01T10:10:40.208Z INFO devtools: COMMAND releaseActions()
+2021-09-01T10:10:40.210Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:40.210Z INFO devtools: RESULT null
+2021-09-01T10:10:40.211Z INFO devtools: COMMAND findElements("xpath", "//a[@id='rh-header-account-menu-dropdown-content-link1']")
+2021-09-01T10:10:40.215Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-63' } ]
+2021-09-01T10:10:40.217Z INFO devtools: COMMAND findElement("xpath", "//a[@id='rh-header-account-menu-dropdown-content-link1']")
+2021-09-01T10:10:40.221Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-64' }
+2021-09-01T10:10:40.224Z INFO devtools: COMMAND elementClick("ELEMENT-64")
+2021-09-01T10:10:40.252Z INFO devtools: RESULT null
+2021-09-01T10:10:47.331Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:47.331Z INFO devtools: RESULT null
+2021-09-01T10:10:47.339Z INFO devtools: COMMAND findElements("css selector", "#email")
+2021-09-01T10:10:47.344Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-65' } ]
+2021-09-01T10:10:47.346Z INFO devtools: COMMAND findElement("css selector", "#email")
+2021-09-01T10:10:47.349Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-66' }
+2021-09-01T10:10:47.352Z INFO devtools: COMMAND elementClear("ELEMENT-66")
+2021-09-01T10:10:47.354Z INFO devtools: RESULT null
+2021-09-01T10:10:47.355Z INFO devtools: COMMAND elementSendKeys("ELEMENT-66", "uat_JwJksdxX@rally.mailinator.com")
+2021-09-01T10:10:47.830Z INFO devtools: RESULT null
+2021-09-01T10:10:47.831Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:47.831Z INFO devtools: RESULT null
+2021-09-01T10:10:47.832Z INFO devtools: COMMAND findElements("css selector", "#password")
+2021-09-01T10:10:47.837Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-67' } ]
+2021-09-01T10:10:47.840Z INFO devtools: COMMAND findElement("css selector", "#password")
+2021-09-01T10:10:47.843Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-68' }
+2021-09-01T10:10:47.846Z INFO devtools: COMMAND elementClear("ELEMENT-68")
+2021-09-01T10:10:47.847Z INFO devtools: RESULT null
+2021-09-01T10:10:47.848Z INFO devtools: COMMAND elementSendKeys("ELEMENT-68", "Testing123!")
+2021-09-01T10:10:47.892Z INFO devtools: RESULT null
+2021-09-01T10:10:47.894Z INFO devtools: COMMAND setTimeouts(50000, undefined, undefined)
+2021-09-01T10:10:47.894Z INFO devtools: RESULT null
+2021-09-01T10:10:47.895Z INFO devtools: COMMAND findElements("css selector", "#submit-button")
+2021-09-01T10:10:47.898Z INFO devtools: RESULT [ { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-69' } ]
+2021-09-01T10:10:47.902Z INFO devtools: COMMAND findElement("css selector", "#submit-button")
+2021-09-01T10:10:47.905Z INFO devtools: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'ELEMENT-70' }
+2021-09-01T10:10:47.908Z INFO devtools: COMMAND elementClick("ELEMENT-70")
+2021-09-01T10:10:48.051Z INFO devtools: RESULT null
+2021-09-01T10:10:53.057Z INFO devtools: COMMAND findElement("css selector", "#rh-header-account-menu-profile-container")
+2021-09-01T10:11:03.210Z TRACE devtools: Target destroyed, removing window handle c7bc4060-18d5-40f7-b46a-c2f66be1fa14
+2021-09-01T10:11:03.211Z TRACE devtools: Switching to window handle with id undefined
+2021-09-01T10:11:03.250Z ERROR @wdio/local-runner: Failed launching test session: Error: no current window handle registered
+    at DevToolsDriver.getPageHandle (/Users/pkhare17/Desktop/Code/rally-web-webdriverio-cucumber/node_modules/devtools/build/devtoolsdriver.js:166:19)
+    at DevToolsDriver.checkPendingNavigations (/Users/pkhare17/Desktop/Code/rally-web-webdriverio-cucumber/node_modules/devtools/build/devtoolsdriver.js:179:25)
+    at Browser.wrappedCommand (/Users/pkhare17/Desktop/Code/rally-web-webdriverio-cucumber/node_modules/devtools/build/devtoolsdriver.js:97:24)
+    at Browser.<anonymous> (/Users/pkhare17/Desktop/Code/rally-web-webdriverio-cucumber/node_modules/@wdio/utils/build/shim.js:238:24)
+    at Runner.endSession (/Users/pkhare17/Desktop/Code/rally-web-webdriverio-cucumber/node_modules/@wdio/runner/build/index.js:340:30)
+    at Runner.run (/Users/pkhare17/Desktop/Code/rally-web-webdriverio-cucumber/node_modules/@wdio/runner/build/index.js:160:24)

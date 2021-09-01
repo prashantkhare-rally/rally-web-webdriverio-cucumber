@@ -16,6 +16,8 @@ import isEnabled from '../support/check/isEnabled';
 import isDisplayed from '../support/check/isDisplayed';
 import openWebsite from '../support/action/openWebsite';
 import setWindowSize from '../support/action/setWindowSize';
+import {CommonUtility} from '../support/lib/commonUtilities';
+
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
@@ -100,4 +102,9 @@ Given(
 Given(
     /^a (alertbox|confirmbox|prompt) is( not)* opened$/,
     checkModal
+);
+
+Given(
+    /^I launch the salesforce application$/,
+    CommonUtility.launchSF
 );

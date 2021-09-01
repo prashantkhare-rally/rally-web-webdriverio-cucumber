@@ -1,3 +1,6 @@
+import fsX from 'fs-extra';
+import path from 'path';
+
 //
 // =====
 // Hooks
@@ -16,8 +19,18 @@ export const hooks = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+    onPrepare: function (config: any, capabilities: any) {
+        let htmlReport = path.resolve(__dirname, '../reports/html');
+        let jsonReport = path.resolve(__dirname, '../reports/json');
+        console.log("reporting of json: " + jsonReport);
+        let screenshotReport = path.resolve(__dirname, '../reports/screenshots');
+        let clientInput = path.resolve(__dirname, '../testdata/clients/expected');
+        fsX.emptyDirSync(htmlReport);
+        fsX.emptyDirSync(jsonReport);
+        fsX.emptyDirSync(screenshotReport);
+        fsX.emptyDirSync(clientInput);
+
+    },
     /**
      * Gets executed before a worker process is spawned & can be used to initialize specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -145,26 +158,65 @@ export const hooks = {
         // } catch(err){
         //     console.log('err', err);
         // }
-        var reporter = require('cucumber-html-reporter');
-        var options = {
-            theme: 'bootstrap',
-            jsonDir: './BDD/reports/json',
-            output: './BDD/reports/html/cucumber_report.html',
-            reportSuiteAsScenarios: true,
-            scenarioTimestamp: true,
-            launchReport: true,
-            storeScreenshots: true,
-            noInlineScreenshots: false
-            // metadata: {
-            //     "App Version":"0.3.2",
-            //     "Test Environment": "STAGING",
-            //     "Browser": "Chrome  54.0.2840.98",
-            //     "Platform": "Windows 10",
-            //     "Parallel": "Scenarios",
-            //     "Executed": "Remote"
-            // }
+
+
+        // var reporter = require('cucumber-html-reporter');
+        // var options = {
+        //     theme: 'bootstrap',
+        //     jsonDir: './BDD/reports/json',
+        //     output: './BDD/reports/html/cucumber_report.html',
+        //     reportSuiteAsScenarios: false,
+        //     scenarioTimestamp: true,
+        //     launchReport: true,
+        //     storeScreenshots: false,
+        //     noInlineScreenshots: false
+        //     // metadata: {
+        //     //     "App Version":"0.3.2",
+        //     //     "Test Environment": "STAGING",
+        //     //     "Browser": "Chrome  54.0.2840.98",
+        //     //     "Platform": "Windows 10",
+        //     //     "Parallel": "Scenarios",
+        //     //     "Executed": "Remote"
+        //     // }
+        // };
+        // reporter.generate(options);
+
+        const report = require('multiple-cucumber-html-reporter');
+
+        function getFormattedDate() {
+            var date = new Date();
+            var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        
+            return str;
         };
-        reporter.generate(options);
+ 
+        report.generate({
+            jsonDir: './BDD/reports/json',
+            reportPath: './BDD/reports/html',
+            metadata:{
+                browser: {
+                    name: 'chrome',
+                    version: '60'
+                },
+                device: 'MAC',
+                platform: {
+                    name: 'Catalina',
+                    version: '10.15.7'
+                }
+            },
+            customData: {
+                title: 'Run info',
+                data: [
+                    {label: 'Project', value: 'Rally Cucumber WebdriverIO'},
+                    {label: 'Release', value: '1.0.0'},
+                    {label: 'Cycle', value: '01/09/2021'},
+                    {label: 'Execution Start Time', value: getFormattedDate()},
+                    {label: 'Execution End Time', value: getFormattedDate()}
+                ]
+            }
+        });
+
+        
     },
     /**
      * Gets executed when a refresh happens.
@@ -184,11 +236,18 @@ export const hooks = {
     // },
         // afterStep: function ({uri, feature, step}, context, {error, result, duration, passed}) {
         // },
-    afterScenario: function (uri: any, feature: any, scenario: any, result: any, sourceLocation: any) {
-        const cucumberJson = require ('wdio-cucumberjs-json-reporter').default;
 
-        cucumberJson.attach(browser.takeScreenshot(), 'image/png');
-    },
+
+
+    // afterScenario: function (uri: any, feature: any, scenario: any, result: any, sourceLocation: any) {
+    //     const cucumberJson = require ('wdio-cucumberjs-json-reporter').default;
+
+    //     cucumberJson.attach(browser.takeScreenshot(), 'image/png');
+    // },
+
+
+
+    
     // afterFeature: function (uri, feature, scenarios) {
     // }
 };

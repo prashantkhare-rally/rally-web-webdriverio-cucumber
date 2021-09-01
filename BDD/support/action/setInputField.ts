@@ -19,8 +19,6 @@ export default async (method: string, value: string, selector: string) => {
 
     let checkValue = value;
 
-    checkIfElementExists(selector, false, 1);
-
     if (!value) {
         checkValue = '';
     }

@@ -20,7 +20,7 @@ export const config: WebdriverIO.Config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './BDD/features/sample.feature',
+        './BDD/features/support-center.feature',
     ],
     // Patterns to exclude.
     exclude: [
@@ -94,7 +94,7 @@ export const config: WebdriverIO.Config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://www.google.com',
+    baseUrl: 'https://accounts.werally.com/login',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -183,7 +183,7 @@ export const config: WebdriverIO.Config = {
         // <boolean> add cucumber tags to feature or scenario name
         tagsInTitle: false,
         // <number> timeout for step definitions
-        timeout: 50000,
+        timeout: 500000,
     } as WebdriverIO.CucumberOpts,
     ...hooks,
 };

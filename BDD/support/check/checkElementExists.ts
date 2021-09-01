@@ -9,12 +9,12 @@ import * as data from '../../locators/common.json';
  *                               (an or no)
  * @param  {String}   selector   Element selector
  */
-export default (isExisting: string, selector: string) => {
+export default async (isExisting: string, selector: string) => {
     /**
      * Falsecase assertion
      * @type {Boolean}
      */
-    let falseCase = true;
+    let falseCase: boolean = true;
 
     if (isExisting === 'an') {
         falseCase = false;
@@ -23,5 +23,6 @@ export default (isExisting: string, selector: string) => {
     const elem = (<any>data)[selector];
     console.log("Element is : " + elem)
 
-    checkIfElementExists(elem, falseCase);
+    await checkIfElementExists(elem, falseCase);
+
 };

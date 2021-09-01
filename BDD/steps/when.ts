@@ -13,9 +13,13 @@ import selectOptionByIndex from '../support/action/selectOptionByIndex';
 import setCookie from '../support/action/setCookie';
 import setInputField from '../support/action/setInputField';
 import setPromptText from '../support/action/setPromptText';
+import {CommonUtility} from '../support/lib/commonUtilities';
+import moveTo from '../support/action/moveTo';
+
+
 
 When(
-    /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
+    /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"(?: with text (.*))?$/,
     clickElement
 );
 
@@ -77,4 +81,19 @@ When(
 When(
     /^I select the option with the (name|value|text) "([^"]*)?" for element "([^"]*)?"$/,
     selectOption
+);
+
+When(
+    /^I read input files for client details (with|without) member details and save them to test data file$/,
+    CommonUtility.saveUserDetailsFromInputFiles
+);  
+
+When(
+    /^I read salesforce for client details and save them to test data file$/,
+    CommonUtility.saveClientDetailsFromSF
+);  
+
+When(
+    /^I move to element "([^"]*)?"$/,
+    moveTo
 );

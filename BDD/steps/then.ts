@@ -25,6 +25,8 @@ import isVisible from '../support/check/isDisplayed';
 import waitFor from '../support/action/waitFor';
 import waitForVisible from '../support/action/waitForDisplayed';
 import checkIfElementExists from '../support/lib/checkIfElementExists';
+import {CommonUtility} from '../support/lib/commonUtilities';
+
 
 Then(
     /^I expect that the title is( not)* "([^"]*)?"$/,
@@ -154,4 +156,9 @@ Then(
 Then(
     /^I expect that a (alertbox|confirmbox|prompt)( not)* contains the text "([^"]*)?"$/,
     checkModalText
+);
+
+Then(
+    /^I validate support number for all clients$/,
+    CommonUtility.validateSupportNumber
 );

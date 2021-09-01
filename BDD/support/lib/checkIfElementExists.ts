@@ -16,8 +16,9 @@ export default (
      * The number of elements found in the DOM
      * @type {Int}
      */
+    browser.setTimeout({ 'implicit': 50000 });
     const nrOfElements = $$(selector);
-    console.log("Number is : " + nrOfElements.length)
+    console.log("Number is : " + nrOfElements.length + selector);
 
     if (falseCase === true) {
         expect(nrOfElements).toHaveLength(

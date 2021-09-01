@@ -12,14 +12,26 @@ import * as data from '../../locators/common.json';
 export default async (
     action: 'click' | 'doubleClick',
     type: 'link' | 'selector',
-    selector: string
+    selector: string,
+    contains?: string
 ) => {
     /**
      * Element to perform the action on
      * @type {String}
      */
-    const elem = (<any>data)[selector];
-    console.log("Element is : " + elem)
+    let elem;
+    if (!contains)
+    {
+        elem = (<any>data)[selector];
+        console.log("Element is : " + elem);
+    }
+    else
+    {
+        // elem = "//a[normalize-space()=" + contains;
+        elem = `//a[normalize-space()="${contains}"]`;
+        console.log("Contains is : " + elem);
+    }
+
 
     /**
      * The method to call on the browser object
